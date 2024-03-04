@@ -6,7 +6,7 @@ const About = () => {
       name="about"
       className="md:px-20 px-6 py-20 md:py-10 md:mt-6  w-full md:h-screen h-[87vh]"
     >
-      <h1 className="text-4xl text-white mb-14">About</h1>
+      <h1 className="text-4xl text-white mb-24">About</h1>
       <p className="mb-6 text-gray-300 ">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, ut
         deleniti? Dolorem, doloremque. Cupiditate labore impedit inventore
