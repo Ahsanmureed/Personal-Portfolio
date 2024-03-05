@@ -6,7 +6,7 @@ const Hero = () => {
     <div
       name="home"
       className="   
-     flex md:flex-row flex-col items-center justify-between py-44 md:py-28 px-24  gap-28  "
+     flex md:flex-row  flex-col items-center justify-between py-44 md:py-28 px-24  gap-28  "
     >
       <div>
         <h1 className="text-white text-4xl md:text-6xl ">I'm a Full Stack</h1>
@@ -26,7 +26,7 @@ const Hero = () => {
         </Link>
       </div>
       <div>
-        <img className="md:w-[28vw] w-screen h-[36vh] md:h-[72vh] rounded-lg" src={img} alt="" />
+        <img className="md:w-[28vw] w-screen h-[28vh] md:h-[72vh] rounded-lg" src={img} alt="" />
       </div>
     </div>
   );
