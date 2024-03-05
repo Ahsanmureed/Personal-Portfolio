@@ -1,12 +1,12 @@
 import React from "react";
-import img from "../assets/ahsan.jpg";
+import img from "../assets/Ahsan.jpg";
 import { Link } from "react-scroll";
 const Hero = () => {
   return (
     <div
       name="home"
       className="   
-     flex md:flex-row flex-col items-center justify-between py-44 md:py-28 px-20  gap-28  "
+     flex md:flex-row flex-col items-center justify-between py-44 md:py-28 px-24  gap-28  "
     >
       <div>
         <h1 className="text-white text-4xl md:text-6xl ">I'm a Full Stack</h1>
@@ -26,7 +26,7 @@ const Hero = () => {
         </Link>
       </div>
       <div>
-        <img className="md:w-[23vw] w-[80vw] rounded-lg" src={img} alt="" />
+        <img className="md:w-[28vw] w-[100vw] h-[37vh] md:h-[67vh] rounded-lg" src={img} alt="" />
       </div>
     </div>
   );
