@@ -1,54 +1,29 @@
 import React from "react";
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
-import installNode from "../assets/portfolio/installNode.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
-import reactWeather from "../assets/portfolio/reactWeather.jpg";
+
+import blog from "../assets/portfolio/blog.png";
+import ecommerce from "../assets/portfolio/ecommerce.png";
+
 
 const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
-      src: arrayDestruct,
-      link: "https://google.com",
+      src: blog,
+      link: "https://mernblog34.netlify.app",
       code: "https://github.com/Ahsanmureed",
     },
     {
       id: 2,
-      src: reactParallax,
-      link: "https://google.com",
+      src: ecommerce,
+      link: "https://mern-ecommerce-dqm5.vercel.app",
       code: "https://github.com/Ahsanmureed",
     },
-    {
-      id: 3,
-      src: navbar,
-      link: "https://google.com",
-      code: "https://github.com/Ahsanmureed",
-    },
-    {
-      id: 4,
-      src: reactSmooth,
-      link: "https://google.com",
-      code: "https://github.com/Ahsanmureed",
-    },
-    {
-      id: 5,
-      src: installNode,
-      link: "https://google.com",
-      code: "https://github.com/Ahsanmureed",
-    },
-    {
-      id: 6,
-      src: reactWeather,
-      link: "https://google.com",
-      code: "https://github.com/Ahsanmureed",
-    },
+
   ];
 
   return (
     <div name="portfolio" className=" text-white md:h-screen mt-8 ">
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
+      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-[90vh]">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Portfolio

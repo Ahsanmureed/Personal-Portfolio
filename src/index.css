@@ -6,7 +6,7 @@
 @tailwind components;
 @tailwind utilities;
 @layer base {
-  html {
+  body {
     font-family: 'Raleway', sans-serif;
     background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
     --tw-gradient-from: #000 var(--tw-gradient-from-position);
