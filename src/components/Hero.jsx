@@ -12,9 +12,7 @@ const Hero = () => {
         <h1 className="text-white text-4xl md:text-6xl ">I'm a Full Stack</h1>
         <h1 className="text-white text-4xl md:text-6xl ">Developer</h1>
         <p className="text-gray-300 flex-wrap w-[78vw] md:w-[42vw] mt-2 pl-0 mb-5">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio
-          eum deserunt culpa accusantium ipsa doloremque pariatur, quis, nulla
-          delectus sjkhidh dkdiddh didhdi dihddi dkdd.
+        Hello Geeks, I'm Ahsan Mureed , a passionate fullstack dev specialized in React.
         </p>
         <Link
           to="portfolio"
