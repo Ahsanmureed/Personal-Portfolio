@@ -4,15 +4,19 @@ const About = () => {
   return (
     <div
       name="about"
-      className="md:px-32 px-6 mx-auto py-20 md:py-10 md:mt-6  h-[70vh] w-full md:h-[70vh]"
+      className="w-full h-screen flex flex-col items-center justify-center px-6 md:px-32 py-16 text-center bg-black"
     >
-      <h1 className="text-4xl font-bold inline border-b-4 border-gray-500  mb-24  text-white">
-            About
-          </h1>
-      <p className=" py-52 mb-6 text-gray-300 text-center ">
-      Hello Geeks, I'm Ahsan Mureed , a passionate fullstack dev specialized in React.
+      {/* Heading */}
+      <h1 className="text-4xl font-bold border-b-4 border-gray-500 text-white inline-block mb-6">
+        About
+      </h1>
+
+      {/* About Content */}
+      <p className="text-gray-300 text-lg leading-relaxed max-w-2xl">
+        Hello Geeks, I'm <span className="text-blue-400">Ahsan Mureed</span>, a passionate full-stack developer specializing in{" "}
+        <span className="text-blue-400">React</span>.  
+        I love building modern, scalable, and user-friendly web applications.
       </p>
-      
     </div>
   );
 };

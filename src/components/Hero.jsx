@@ -1,30 +1,45 @@
 import React from "react";
-import img from "../assets/Ahsan.jpg";
+import img from "../assets/ahsan.jpg";
 import { Link } from "react-scroll";
+
 const Hero = () => {
   return (
     <div
       name="home"
-      className="   
-     flex md:flex-row  flex-col items-center justify-between py-44 md:py-28 px-24  gap-28  "
+      className="flex flex-col md:flex-row items-center justify-center px-6 md:px-28 py-20 min-h-screen gap-12 md:gap-20"
     >
-      <div>
-        <h1 className="text-white text-4xl md:text-6xl ">I'm a Full Stack</h1>
-        <h1 className="text-white text-4xl md:text-6xl ">Developer</h1>
-        <p className="text-gray-300 flex-wrap w-[78vw] md:w-[42vw] mt-2 pl-0 mb-5">
-        Hello Geeks, I'm Ahsan Mureed , a passionate fullstack dev specialized in React.
+      {/* Left Content */}
+      <div className="text-center md:text-left">
+        <h1 className="text-white text-4xl md:text-6xl font-bold leading-tight">
+          I'm a Full Stack
+        </h1>
+        <h1 className="text-white text-4xl md:text-6xl font-bold leading-tight">
+          Developer
+        </h1>
+        <p className="text-gray-300 mt-4 text-lg md:w-[40vw] leading-relaxed">
+          Hello Geeks, I'm <span className="text-blue-400">Ahsan Mureed</span>, a passionate Full Stack Developer specializing in <span className="text-blue-400">React</span>.
         </p>
-        <Link
-          to="portfolio"
-          smooth
-          duration={500}
-          className="  cursor-pointer bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-7 rounded-full mt-7"
-        >
-          Portfolio
-        </Link>
+
+        {/* Portfolio Button */}
+        <div className="mt-6">
+          <Link
+            to="portfolio"
+            smooth
+            duration={500}
+            className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300"
+          >
+            View Portfolio
+          </Link>
+        </div>
       </div>
-      <div>
-        <img className="md:w-[28vw] w-[100vw] h-[37vh] md:h-[72vh] rounded-lg" src={img} alt="" />
+
+      {/* Right Image */}
+      <div className="flex justify-center">
+        <img
+          className="md:w-[28vw] w-[75vw] max-w-[400px] rounded-lg shadow-lg"
+          src={img}
+          alt="Ahsan Mureed"
+        />
       </div>
     </div>
   );

@@ -1,50 +1,19 @@
+// Contact.js
 import React from "react";
 
 const Contact = () => {
   return (
-    <div name="contact" className="w-full h-screen md:mb-10  p-4  text-white">
-      <div className="flex flex-col p-4 justify-center h-[94vh] max-w-screen-lg mx-auto">
-        <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
-            Contact
-          </p>
-          <p className="py-6">Submit the form below to get in touch with me</p>
-        </div>
-
-        <div className=" flex justify-center items-center">
-          <form
-            action="https://getform.io/f/eapwqewb"
-            method="POST"
-            className=" flex flex-col w-full md:w-1/2"
-          >
-            <input
-              type="text"
-              name="name"
-              placeholder="Enter your name"
-              className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
-            />
-            <input
-              type="text"
-              name="email"
-              placeholder="Enter your email"
-              className="my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
-            />
-            <textarea
-              name="message"
-              placeholder="Enter your message"
-              rows="10"
-              className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
-            ></textarea>
-
-            <button
-              type="submit"
-              className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300"
-            >
-              Let's talk
-            </button>
-          </form>
-        </div>
+    <div name="contact" className="w-full h-screen flex flex-col items-center justify-center p-6 text-white">
+      <div className="max-w-screen-lg w-full text-center">
+        <h2 className="text-4xl font-bold border-b-4 border-gray-500 inline-block pb-2">Contact</h2>
+        <p className="text-gray-400 mt-3 text-lg">Let's connect! Fill out the form below.</p>
       </div>
+      <form action="https://getform.io/f/eapwqewb" method="POST" className="w-full md:w-1/2 space-y-4 bg-gray-900 p-6 rounded-lg shadow-lg mt-8">
+        <input type="text" name="name" placeholder="Enter your name" className="w-full p-3 bg-gray-800 border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400" />
+        <input type="email" name="email" placeholder="Enter your email" className="w-full p-3 bg-gray-800 border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400" />
+        <textarea name="message" placeholder="Enter your message" rows="6" className="w-full p-3 bg-gray-800 border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
+        <button type="submit" className="w-full bg-gradient-to-r from-blue-500 to-cyan-500 px-6 py-3 text-white font-semibold rounded-md hover:scale-105 transition-transform duration-300">Let's Talk</button>
+      </form>
     </div>
   );
 };

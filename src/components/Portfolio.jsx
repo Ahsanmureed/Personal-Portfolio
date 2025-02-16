@@ -3,7 +3,6 @@ import React from "react";
 import blog from "../assets/portfolio/blog.png";
 import ecommerce from "../assets/portfolio/ecommerce.png";
 
-
 const Portfolio = () => {
   const portfolios = [
     {
@@ -18,39 +17,45 @@ const Portfolio = () => {
       link: "https://mern-ecommerce-dqm5.vercel.app",
       code: "https://github.com/Ahsanmureed",
     },
-
   ];
 
   return (
-    <div name="portfolio" className=" text-white md:h-screen mt-8 ">
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-[100vh]">
-        <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
-            Portfolio
-          </p>
-          <p className="py-6">Check out some of my work right here</p>
+    <div name="portfolio" className="text-white min-h-screen flex flex-col justify-center items-center px-6 py-16 bg-gray-900">
+      <div className="max-w-screen-lg w-full">
+        {/* Heading */}
+        <div className="pb-8 text-center">
+          <p className="text-4xl font-bold inline border-b-4 border-blue-500">Portfolio</p>
+          <p className="py-4 text-gray-400">Here are some of my recent projects</p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src, link,code }) => (
-            <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
+        {/* Portfolio Grid */}
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+          {portfolios.map(({ id, src, link, code }) => (
+            <div key={id} className="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
               <img
                 src={src}
-                alt=""
-                className="rounded-md duration-200 hover:scale-105"
+                alt="Project Thumbnail"
+                className="w-full h-56 object-cover"
               />
-              <div className="flex items-center justify-center">
-                <a
-                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
-                  target="blank"
-                  href={link}
-                >
-                  Demo
-                </a>
-
-                <a href={code} className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105" target="blank">
-                  Code
-                </a>
+              <div className="p-4">
+                <div className="flex justify-between">
+                  <a
+                    href={link}
+                    className="w-1/2 text-center py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-bl-lg transition duration-300"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Live Demo
+                  </a>
+                  <a
+                    href={code}
+                    className="w-1/2 text-center py-3 bg-gray-700 hover:bg-gray-900 text-white font-semibold rounded-br-lg transition duration-300"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Source Code
+                  </a>
+                </div>
               </div>
             </div>
           ))}
