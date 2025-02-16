@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div
       name="home"
-      className="flex flex-col md:flex-row items-center justify-center px-6 md:px-28 py-20 min-h-screen gap-12 md:gap-20"
+      className="flex flex-col md:flex-row items-center justify-between px-8 md:px-36 py-32 md:py-32 gap-12 md:gap-28"
     >
       {/* Left Content */}
       <div className="text-center md:text-left">

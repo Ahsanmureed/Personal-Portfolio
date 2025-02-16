@@ -21,7 +21,7 @@ const NavBar = () => {
       </h1>
 
       {/* Desktop Links */}
-      <ul className="hidden md:flex space-x-6">
+      <ul className="hidden md:flex space-x-12">
         {links.map(({ id, link }) => (
           <li
             key={id}
