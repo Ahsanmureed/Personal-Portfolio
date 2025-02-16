@@ -59,7 +59,7 @@ const NavBar = () => {
         {/* Menu Links */}
         <ul className="text-gray-400 space-y-6 text-2xl">
           {links.map(({ id, link }) => (
-            <li key={id} className="cursor-pointer hover:text-white transition">
+            <li key={id} className="cursor-pointer capitalize hover:text-white transition">
               <Link
                 to={link}
                 smooth
