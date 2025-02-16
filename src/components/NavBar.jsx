@@ -27,7 +27,7 @@ const NavBar = () => {
             key={id}
             className="text-gray-400 hover:text-white transition duration-300 cursor-pointer capitalize text-lg"
           >
-            <Link to={link} smooth duration={500} offset={-80}>
+            <Link to={link} smooth duration={500} offset={-20}>
               {link}
             </Link>
           </li>
