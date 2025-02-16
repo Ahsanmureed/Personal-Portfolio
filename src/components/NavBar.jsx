@@ -39,7 +39,7 @@ const NavBar = () => {
         onClick={() => setNav(!nav)}
         className="text-gray-400 text-3xl cursor-pointer md:hidden transition duration-300 z-50"
       >
-        {nav ? <FaTimes /> : <FaBars />}
+        {nav ?'' : <FaBars />}
       </div>
 
       {/* Mobile Menu */}

@@ -26,6 +26,7 @@ const Hero = () => {
             to="portfolio"
             smooth
             duration={500}
+            offset={-20}
             className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300"
           >
             View Portfolio
