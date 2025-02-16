@@ -20,7 +20,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <div name="portfolio" className="text-white h-screen flex flex-col justify-center items-center px-6 py-16 bg-gray-900">
+    <div name="portfolio" className="text-white min-h-screen flex flex-col justify-center items-center px-6 py-16 bg-gray-900">
       <div className="max-w-screen-lg w-full">
         {/* Heading */}
         <div className="pb-8 text-center">
